@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>WOW stories</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <!--header-->
+
+
+    <header>
+
+        <!--inloggen-->
+
+        <ul>
+            <li><a href="inlogpagina.html">Inloggen</a></li>
+        </ul>
+
+
+        <!--menu-->
+
+        <nav>
+            <ul>
+                <li>Favorieten</li>
+                <li><a href="website_mobiel.html"><img src="img/WOW_logo.jpg" alt="logo WOW air"></a></li>
+                <li>Gedownload</li>
+            </ul>
+        </nav>
+
+
+
+        <h1>Weet je niet wat je moet lezen?</h1>
+        <button>Verhaal van de dag!</button>
+
+
+    </header>
+
+
+    <!--start main-->
+
+    <main>
+
+
+        <h2> 99 Verhalen</h2>
+
+        <form>
+            <select name="sorteren">
+                    <option value="0">Sorteren op..</option>
+                    <option value="wowrating">WOW rating</option>
+                    <option value="nieuwoud">Nieuw - oud</option>
+                    <option value="oudnieuw">Oud - nieuw</option>
+                    <option value="az">A-Z</option>
+            </select>
+        </form>
+
+
+
+
+        <!--De verhalen-->
+
+        <h2>Resultaten</h2>
+        
+        <section id="verhalen">
+
+            <form id="filter">
+                <h2>Filters</h2>
+
+                <div class=showfilters>
+                    <fieldset>
+                        <legend>Leestijd</legend>
+
+
+                        <input id="radio1" type="radio" name="leestijd" value="<5 min" checked/>
+                        <label for="radio1">5 min</label>
+
+                        <input id="radio2" type="radio" name="leestijd" value="~10 min"/>
+                        <label for="radio2">10 min</label>
+
+                        <input id="radio3" type="radio" name="leestijd" value="~15 min"/>
+                        <label for="radio3">~15 min</label>
+
+                        <input id="radio4" type="radio" name="leestijd" value=">15 min"/>
+                        <label for="radio4">>15min</label>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>filteropties</legend>
+
+                        <select name="emotie">
+                            <option value="0">Emotie..</option>    
+                            <option value="Blij">Blij (4)</option>
+                            <option value="Droevig">Droevig (9)</option>
+                            <option value="Agressief">Agressief (5)</option>
+                            <option value="Angst">Angst (1)</option>
+                            <option value="Ongemakkelijk">Ongemakkelijk (4)</option>
+                            <option value="Verward">Verward (10)</option>
+                            <option value="Geïriteerd">Geïriteerd (2)</option>
+                            <option value="Enthousiast">Enthousiast (6)</option>
+                            <option value="Neutraal">Neutraal (35)</option>
+                        </select>
+
+
+                       <select name="taal">
+                            <option value="0">Taal..</option>
+                            <option value="nederlands">Nederlands (88)</option>
+                            <option value="oud nederlands">Oud nederlands (3)</option>
+                            <option value="nederlands accent">Nederlands accent (4)</option>
+                            <option value="frans">Frans (2)</option>
+                            <option value="engels">Engels (2)</option>
+                        </select>
+
+                         <select name="Genre">
+                            <option value="0">Genre..</option>
+                            <option value="Fictie">Fictie (9)</option>
+                            <option value="Horror">Horror (1)</option>
+                            <option value="Poezië">Poezië (10)</option>
+                            <option value="Oorlog">Oorlog (1)</option>
+                            <option value="Spannend">Spannend (3)</option>
+                            <option value="Godsdienst">Godsdienst (1)</option>
+                            <option value="Non fictie">Non fictie (74)</option>
+                        </select>
+
+                        <button>Filter verhalen</button>
+
+                    </fieldset>
+                </div>
+            </form>
+
+            <article>
+                <img src="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/playlists/playlist_62/how_to_tell_a_story_update_1200x627.jpg?quality=89&w=800" alt="verhaal1" alt="verhaal_1">
+                <h3>Bejaard</h3>
+                <img src="img/download_button.png" alt="downloadbutton">
+                <img src="img/wow_button.png" alt="WOWrating" class="wit">
+                <button><a href="verhalenpagina.html">Lees meer</a></button>
+            </article>
+
+            <article>
+                <img src="img/verhaal_foto1.png" alt="verhaal2">
+                <h3>Nico Dijkshoorn die Mart Smeets imiteert</h3>
+                <img src="img/download_button.png" alt="downloadbutton">
+                <img src="img/wow_button.png" alt="WOWrating" class="wit">
+                <button><a href="verhalenpagina.html">Lees meer</a></button>
+            </article>
+
+            <article>
+                <img src="img/verhaal_foto2.png" alt="verhaal3">
+                <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij 'de kids'</h3>
+                <img src="img/download_button.png" alt="downloadbutton">
+                <img src="img/wow_button.png" alt="WOWrating" class="wit">
+                <button><a href="verhalenpagina.html">Lees meer</a></button>
+            </article>
+
+
+        </section>
+
+
+        <h2>Of lees onze speciale WOW Bundels!</h2>
+        <section id="bundels">
+
+            <img src="img/bundel_1.png" alt="bundel_30min">
+
+            <img src="img/bundel_2.png" alt="bundel_1u">
+
+            <img src="img/bundel_3.png" alt="verhaal_2u">
+
+        </section>
+
+
+         <footer>
+
+            <p>Deze site wordt mede mogelijk gemaakt door <a href="#">WOW air</a> en <a href="#">Max Molovich</a></p>
+
+            <img src="img/wow_footer.png" alt="logo WOW air">
+
+        </footer>
+
+
+    </main>
+        <!--Footer-->
+       
+
+</body>
+
+<script type="text/javascript" src="javascript.js"></script>
+
+</html>

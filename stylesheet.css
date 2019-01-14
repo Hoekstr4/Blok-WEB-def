@@ -1,0 +1,354 @@
+
+/*algemeen opmaak*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+h1, h2, h3, h4, p, a{
+    font-family:helvetica neue,  sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    list-style-type: none;
+    
+}
+
+a:hover {
+    list-style-type: none;
+    color:white;
+}
+
+a:visited {
+    list-style-type: none;
+    color:black;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+/*header opmaak*/
+
+
+nav ul li img {
+    max-width: 5em;
+}
+
+header {
+    height:25em;
+    color:white;
+    text-align: center;
+    background-color:purple;
+    background-image:url(img/header_afbeelding.png);
+    background-size: cover;
+    border:1px purple;
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+
+
+/*menu inlog opmaak*/
+
+header ul li {
+    display: flex;
+    justify-content: flex-end;
+    color:black;
+    padding-right:0.5em;
+}
+
+
+ 
+header ul {
+    background-color:white;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+
+/*menu opmaak*/
+
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    
+    background-color: white;
+    color: black;
+
+    padding-bottom: 0.7em;
+    padding-top: 0.2em;
+    margin-left: -2em;
+    
+    margin-top:0;
+    margin-bottom:0;
+}
+
+
+
+nav ul li:first-of-type {  
+    margin-top: 1.5em;
+    margin-right: 1em;
+}
+
+nav ul li:last-of-type {
+    margin-top: 1.5em;
+    margin-left: 1em;
+}
+
+
+
+/* filter opmaak */
+
+
+#filter {
+    width: 100%;
+}
+
+form fieldset {
+    border:none;
+}
+
+form:last-of-type {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+    background-color: #f9f9f9;
+    border: 1px darkgrey;
+    max-width: 16em;
+}
+
+form:last-of-type h2 {
+    background-color: purple;
+    padding-bottom:1em;
+    margin-bottom:0em;
+    color:white;
+    padding-top: 1em;
+    text-transform: uppercase;
+    margin-top: 1.4em;
+    width:100%;
+}
+
+form:last-of-type h2, h3 {
+    text-align: center;
+        display: block;
+}
+
+form:last-of-type select {
+    display: block;
+    width:100%;
+    font-family: helvetica;
+    height:3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    
+}
+
+button {
+    margin-top:1em;
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    text-transform: uppercase;
+    padding:1em;
+    border-radius: 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+form:last-of-type img {
+    position: absolute;
+    margin-top:-4em;
+    margin-left:56em;
+}
+
+
+input label {
+    display: flex;
+    padding:2rem 2rem;
+
+}
+
+
+/*Sorteren op.. opmaak */
+
+
+form:first-of-type {
+    display:flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    background-color:white;
+    padding-right: 1em;
+}
+
+
+/*filter microinteractie*/
+
+
+
+.showfilters {
+    display: none;
+    background-color: #f9f9f9;
+    
+}
+
+.animatiefilter {
+    display: block;
+    max-height:0em;
+    overflow:hidden;
+    transition: max-height 0.9s ease-out;
+    background-color: #f9f9f9;
+    
+}
+
+
+
+
+
+/*artikelen opmaak*/
+
+
+article {
+    display: grid;
+    width: 15em;
+    border: 0.063em solid black;
+    min-height: 20em;
+    margin: 1em;
+    padding: 1em;
+    transition: 1s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+article img:first-of-type {
+    width: 100%;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    margin-top: -1em;
+}
+
+
+
+
+article img:last-of-type { /*WOW knop*/
+    position: absolute;
+    margin-top:-2em;
+    margin-left:12em;
+
+}
+
+article:hover {
+    border-color: purple;
+    border-width: 6px;
+    
+}
+
+article button {
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    text-transform: uppercase;
+    padding:1em;
+    border-radius: 0.5em;
+    float: right;
+    
+}
+
+button:hover {
+    background-color: purple;
+    color: white;
+    border: 2px solid #555555;
+    text-transform: uppercase;
+    
+}
+
+h4 {
+    color:black;
+    
+}
+
+/*bundel opmaak*/
+
+
+
+#bundels img {
+    width: 20em;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+/*footer opmaak*/
+
+
+footer {
+    background-color:#f4eee8;
+}
+
+footer img {
+    width:20em;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    padding-top:1em;
+    padding-left:1em;
+}
+
+
+
+/*media queries artikelen */
+
+
+@media(min-width:30em){
+    #verhalen, #bundels {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        max-width: 60em;
+        
+    }
+    
+    .showfilters {
+    display: block;
+    
+    }
+}
+
+@media(min-width:60em){
+    #bundels, #verhalen {
+        grid-template-columns: 1fr 1fr 1fr;   
+    }
+}

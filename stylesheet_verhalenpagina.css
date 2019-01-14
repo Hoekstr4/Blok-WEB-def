@@ -1,0 +1,200 @@
+
+/*algemeen opmaak*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+h1, h2, h3, h4, p, a{
+    font-family:helvetica neue,  sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:active {
+list-style-type: none;
+    
+}
+
+a:visited {
+    list-style-type: none;
+    color:black;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+
+/*header opmaak*/
+
+nav ul li img{
+    max-width: 5em;
+}
+
+header {
+    height:25em;
+    color:white;
+    text-align: center;
+    background-color:purple;
+    background-image:url(img/header_afbeelding.png);
+    background-size: cover;
+    border:1px purple;
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+/*menu inlog opmaak*/
+
+header ul li {
+    display: flex;
+    justify-content: flex-end;
+    color:black;
+    padding-right:0.5em;
+}
+
+
+ 
+header ul {
+    background-color:white;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+
+/*menu opmaak*/
+
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    
+    background-color: white;
+    color: black;
+
+    padding-bottom: 0.7em;
+    padding-top: 0.2em;
+    margin-left: -2em;
+    
+    margin-top:0;
+    margin-bottom:0;
+}
+
+
+
+nav ul li:first-of-type {  
+    margin-top: 1.5em;
+    margin-right: 1em;
+}
+
+nav ul li:last-of-type {
+    margin-top: 1.5em;
+    margin-left: 1em;
+}
+
+
+
+
+/*verhaalpagina opmaak */
+
+
+section {
+    background-image: url(img/ontwerp_verhaal_interactie.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:150em;
+}
+
+
+
+/*button opmaak*/
+
+button {
+    margin-top:1em;
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    text-transform: uppercase;
+    padding:1em;
+    border-radius: 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+ button:hover {
+    background-color: purple;
+    color: white;
+    border: 2px solid #555555;
+    text-transform: uppercase;
+    
+}
+
+/*footer opmaak*/
+
+
+footer {
+    background-color:#f4eee8;
+}
+
+footer img {
+    width:20em;
+   display: block;
+
+}
+
+footer p {
+    padding-top:1em;
+    padding-left:1em;
+}
+
+
+
+/*media queries*/
+
+@media(min-width:30em){
+    #verhalen, #bundels {
+  
+        
+    }
+    
+    .showfilters {
+  
+    
+    }
+}
+
+@media(max-width:60em){
+    section {
+        background-image: url(img/ontwerp_verhaal-02.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:250em;
+    }
+
+}
+
+@media (max-width:30em) {
+    section {
+        background-image: url(img/ontwerp_verhaal-03.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:180em;
+    }
+}
+
